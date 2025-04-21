@@ -1,0 +1,113 @@
+#projects {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--accent-color);
+  align-items: center;
+  padding: 4em 1em;
+  border-radius: 1em;
+  box-shadow: 2px 2px 10px black;
+  color: var(--background-color);
+  gap: 5em;
+}
+
+.projects_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 1em 5em;
+  gap: 2em;
+  color: var(--accent-color);
+  height: 50%;
+  width: 100%;
+}
+
+.projects_list > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  font-size: 1em;
+  width: 100%;
+  background-color: var(--background-color);
+  border-radius: 1em;
+  box-shadow: 2px 2px 10px black;
+  padding: 1em;
+}
+
+.projects_img {
+  height: 10em;
+  background-color: var(--background-color);
+  padding: 0.5em;
+  box-shadow: 1px 1px 10px var(--accent-color);
+  border-radius: 1em;
+}
+
+.projects_title {
+  font-size: 2em;
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+}
+
+.project_links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  gap: 1em;
+}
+.project_links a {
+  text-decoration: none;
+  color: var(--background-color);
+  background-color: var(--accent-color);
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  transition: 0.25s ease-in-out;
+  font-weight: bold;
+  transform: scale(1.05);
+}
+
+.projects_list > div .text {
+  /* border: 1px solid var(--accent-color); */
+  /* box-shadow: 1px 1px 10px var(--accent-color); */
+  padding: 0.5em;
+  flex: 1;
+  border-radius: 1em;
+  text-align: center;
+}
+
+.project_links a:hover {
+  text-decoration: none;
+  transform: scale(1.07);
+  transition: 0.25s ease-in-out;
+  box-shadow: 1px 1px 10px var(--accent-color);
+}
+
+@media screen and (max-width: 1024px) {
+  .projects_list {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .projects_img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .projects_list {
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-width: fit-content;
+  }
+
+  .projects_img {
+    width: 100%;
+  }
+
+  .project_links a {
+    font-size: 4vw;
+    padding: 0.5vh 1vw;
+  }
+}

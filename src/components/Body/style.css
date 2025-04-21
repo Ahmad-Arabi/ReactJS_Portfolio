@@ -1,0 +1,44 @@
+body {
+  background-image: linear-gradient(
+    to bottom,
+    var(--background-color),
+    var(--accent-color)
+  );
+}
+
+.main_container {
+  padding: 5px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+  align-items: stretch;
+  justify-content: space-around;
+  max-width: 100%;
+}
+
+.title h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--background-color);
+  opacity: 0.8;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 1em;
+}
+
+
+@media screen and (max-width: 430px) {
+  .main_container {
+    padding: 0.5em 1em;
+  }
+}
