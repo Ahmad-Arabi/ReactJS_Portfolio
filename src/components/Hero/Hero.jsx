@@ -1,5 +1,5 @@
 import React from 'react'
-import github from '../../assets/images/github.svg'
+import github from '../../assets/images/gitHub.svg'
 import profilePic from '../../assets/images/profile.png'
 import './style.css'
 
