@@ -67,10 +67,10 @@ q {
 
 @media screen and (max-width: 430px) {
   .avatar_card {
-    font-size: 5vw;
+    font-size: 4vw;
   }
 
   q {
-    font-size: 5vw;
+    font-size: 4vw;
   }
 }

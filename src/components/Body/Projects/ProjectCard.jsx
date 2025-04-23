@@ -9,7 +9,7 @@ const ProjectCard = ({ projectName, brief, github, preview }) => {
         src= {image}
         alt="project image"
       />
-      <h3>{projectName}</h3>
+      <h3 className="project_name">{projectName}</h3>
       <p className="text">{brief}</p>
       <div className="project_links">
         <a href={github} target="_blank">
